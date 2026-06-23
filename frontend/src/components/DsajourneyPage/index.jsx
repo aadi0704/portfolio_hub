@@ -26,7 +26,7 @@ const Dsajourney = () => {
     }));
 
     try {
-      const response = await fetch("http://localhost:5000/api/dsa");
+      const response = await fetch("https://portfolio-backend-gken.onrender.com/dsa");
 
       const responseData = await response.json();
 

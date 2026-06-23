@@ -20,7 +20,7 @@ useEffect(() => {
 const fetchProjects = async () => {
 try {
 const response = await fetch(
-`http://localhost:5000/projects/${categoryId}`
+`https://portfolio-backend-gken.onrender.com/projects/${categoryId}`
 );
 
 

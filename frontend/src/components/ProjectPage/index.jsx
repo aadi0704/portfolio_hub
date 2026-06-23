@@ -24,7 +24,7 @@ const ProjectPage = () => {
       }));
 
       const response = await fetch(
-        "http://localhost:5000/api/categories"
+        "https://portfolio-backend-gken.onrender.com/categories"
       );
 
       if (!response.ok) {
