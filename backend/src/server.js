@@ -16,9 +16,9 @@ app.use(express.json());
 connectDB();
 
 
-app.use("/api/categories", categoryRoutes);
-app.use("/api/dsa", dsaRoutes);
-app.use("/projects",projectRoutes)
+app.use("/categories", categoryRoutes);
+app.use("/dsa", dsaRoutes);
+app.use("/projects",projectRoutes);
 app.listen(5000, () => {
   console.log("Server running on port 5000");
 });
