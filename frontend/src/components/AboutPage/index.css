@@ -1,0 +1,157 @@
+.about {
+  min-height: 100dvh;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+
+.intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.profile-img {
+  width: 300px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
+}
+
+.intro-content {
+  max-width: 700px;
+}
+
+.about-intro {
+  margin-top: 1rem;
+  color: #cbd5e1;
+  line-height: 1.8;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+
+
+.highlights {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.highlight-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 0.9rem 1.2rem;
+
+  border: 1px solid #334155;
+  border-radius: 10px;
+
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+}
+
+.highlight-card svg {
+  color: #3b82f6;
+  flex-shrink: 0;
+}
+
+.highlight-card span {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+
+@media screen and (max-width: 768px) {
+  .intro-section {
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 300px;
+  }
+
+  .intro-content {
+    max-width: 100%;
+  }
+
+  .about-intro {
+    text-align: left;
+  }
+
+  .highlights {
+    justify-content: stretch;
+  }
+
+  .highlight-card {
+    width: 100%;
+  }
+}
+
+.education-section {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.education-heading {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+  text-align: center;
+}
+
+.education-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+  box-shadow: 0 10px 30px rgba(59, 130, 246, 0.15);
+}
+
+.year {
+  color: #60a5fa;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.branch {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f8fafc;
+  margin-bottom: 0.4rem;
+}
+
+.college {
+  color: #cbd5e1;
+  margin-bottom: 1rem;
+}
+
+.grade {
+  color: #94a3b8;
+}

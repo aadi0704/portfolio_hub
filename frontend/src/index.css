@@ -1,0 +1,119 @@
+:root {
+  --bg: #020617;
+  --text: #cbd5e1;
+  --text-heading: #f8fafc;
+
+  --primary: #38bdf8;
+  --primary-dark: #0ea5e9;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --glass: rgba(15, 23, 42, 0.6);
+
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  --font-main: "Inter", system-ui, sans-serif;
+  --font-heading: "Poppins", system-ui, sans-serif;
+
+  font-size: 18px;
+  line-height: 1.5;
+
+  color-scheme: dark;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--text-heading);
+}
+
+
+code {
+  font-family: ui-monospace, Consolas, monospace;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: var(--text-heading);
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section-title{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #38bdf8;
+    gap: 0.5rem;
+
+}
+.line{
+    width:40px;
+    height:2px;
+    background:#38bdf8;
+    border-radius:2px;
+}
+.section-heading{
+    font-family:'Poppins',sans-serif;
+    font-size:2.4rem;
+    font-weight:700;
+    color:#F8FAFC;
+    line-height:1.3;
+    width:100%;
+    text-align:center;
+    margin-top:0.5rem;
+    margin-bottom:1rem;
+    text-shadow:0 0 15px rgba(59,130,246,.4),0 0 30px rgba(59,130,246,.2);
+    @media screen and (max-width: 768px) {
+        font-size: 1.6rem;
+    }
+}
+
+.highlight{
+    display:inline;
+    background:#38bdf8;
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+.highlight-text{
+    color:#38bdf8;
+    font-size: clamp(0.8rem,2vw,1.1rem);
+    font-weight: 500;
+}

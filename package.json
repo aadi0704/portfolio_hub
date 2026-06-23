@@ -1,0 +1,26 @@
+{
+  "name": "portfolio-hub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "frontend": "npm run dev --prefix frontend",
+    "backend": "cd backend && node src/server.js",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^10.0.3",
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "lucide-react": "^1.18.0",
+    "react-chrono": "^3.3.3",
+    "react-router-dom": "^7.18.0",
+    "recharts": "^3.8.1"
+  }
+}
