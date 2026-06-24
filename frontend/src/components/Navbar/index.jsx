@@ -34,29 +34,26 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
+  const handleScroll = () => {
     const sections = document.querySelectorAll("section[id]");
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          
-          if (entry.isIntersecting) {
-            setActiveSection(entry.target.id);
-          }
-        });
-      },
-      {
-        
-        threshold: [0.25, 0.5],
+    sections.forEach((section) => {
+      const top = section.offsetTop - 100;
+      const height = section.offsetHeight;
+
+      if (
+        window.scrollY >= top &&
+        window.scrollY < top + height
+      ) {
+        setActiveSection(section.id);
       }
-    );
+    });
+  };
 
-    sections.forEach((section) => observer.observe(section));
+  window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
   const renderLink = (item, isMobile = false) => {
     const isActive = item.id && item.id === activeSection;
 
