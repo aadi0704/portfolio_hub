@@ -47,7 +47,7 @@ const Navbar = () => {
       },
       {
         
-        rootMargin: "-20% 0px -65% 0px", 
+        threshold: [0.25, 0.5],
       }
     );
 
