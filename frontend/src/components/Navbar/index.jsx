@@ -21,7 +21,7 @@ const navItems = [
 {
 icon: <FileText size={22} />,
 name: "Resume",
-link: "/Medicharla_Adi_FullStack_Developer_Resume.pdf",
+link: "/Medicharla_Adi_Resume.pdf",
 external: true,
 },
 { icon: <Mail size={22} />, name: "Contact", id: "contact", link: "#contact" },
