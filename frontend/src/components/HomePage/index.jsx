@@ -28,7 +28,7 @@ const HomePage = () => {
         </a>
 
         <a
-          href="/Medicharla_Adi_FullStack_Developer_Resume.pdf"
+          href="/Medicharla_Adi_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="button btn-secondary"
