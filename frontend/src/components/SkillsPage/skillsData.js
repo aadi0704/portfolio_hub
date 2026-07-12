@@ -19,7 +19,6 @@ import {
 import {
   SiSpringboot,
   SiExpress,
-  SiFastapi,
   SiReact,
   SiJavascript,
   SiHtml5,
@@ -55,7 +54,6 @@ export const skills = [
       { name: "Spring Boot", icon: SiSpringboot, iconColor: "#6DB33F" },
       { name: "Node.js", icon: FaNodeJs, iconColor: "#339933" },
       { name: "Express.js", icon: SiExpress, iconColor: "#ffffff" },
-      { name: "FastAPI", icon: SiFastapi, iconColor: "#009688" }
     ]
   },
 
